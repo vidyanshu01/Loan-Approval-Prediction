@@ -1,0 +1,39 @@
+project:
+  name: "Loan Approval Prediction System"
+  version: "1.0.0"
+  author: "Vidyanshu Kushawaha"
+
+data:
+  raw_data_path: "data/raw/loan_data.csv"
+  processed_data_path: "data/processed/clean_loan_data.csv"
+
+artifacts:
+  model_path: "artifacts/model.pkl"
+  scaler_path: "artifacts/scaler.pkl"
+  encoder_path: "artifacts/encoder.pkl"
+  feature_columns_path: "artifacts/feature_columns.pkl"
+
+training:
+  test_size: 0.2
+  random_state: 42
+  cv_folds: 5
+
+models:
+  random_forest:
+    n_estimators: 300
+    max_depth: 10
+
+  xgboost:
+    n_estimators: 500
+    learning_rate: 0.03
+    max_depth: 6
+    subsample: 0.8
+    colsample_bytree: 0.8
+
+logging:
+  log_file: "logs/project.log"
+
+streamlit:
+  page_title: "Loan Approval Prediction"
+  page_icon: "🏦"
+  layout: "wide"

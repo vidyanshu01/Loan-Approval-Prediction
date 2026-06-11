@@ -1,0 +1,11 @@
+2026-06-12 02:51:37,167 - INFO - Raw Data load Successfully
+2026-06-12 02:51:37,217 - INFO - Preprocessing Started
+2026-06-12 02:51:37,217 - INFO - Handling Null value
+2026-06-12 02:51:37,309 - INFO - Preprocessing Completed
+2026-06-12 02:51:38,632 - INFO - Creating New Feature started
+2026-06-12 02:51:38,637 - INFO - Feature Engineering Done
+2026-06-12 02:51:41,546 - INFO - Training Started
+2026-06-12 02:51:41,624 - INFO - Label encoder saved successfully
+2026-06-12 02:51:42,328 - INFO - Model Saved Successfully
+2026-06-12 02:51:46,560 - INFO - Evaluation Started
+2026-06-12 02:51:46,795 - INFO - Evaluation Completed Successfully
