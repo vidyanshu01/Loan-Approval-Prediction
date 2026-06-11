@@ -594,13 +594,13 @@ Vidyanshu Kushawaha
 Aspiring Data Scientist | Machine Learning Engineer
 
 GitHub:
-https://github.com/yourusername
+https://github.com/vidyanshu01
 
 LinkedIn:
-https://linkedin.com/in/yourprofile
+www.linkedin.com/in/vidyanshu-kushawaha-551a6a2a7
 
 Email:
-yourmail@example.com
+vidy0nshu@gmail.com
 
 ---
 
