@@ -1,7 +1,13 @@
+import sys
+import os
+
+# Add the root directory to the python path
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 import streamlit as st
 import pandas as pd
 import joblib
-from src.config_loader import load_config
+from ..src.config_loader import load_config
 
 # ======================
 # LOAD CONFIG & INITIAL OBJECTS
