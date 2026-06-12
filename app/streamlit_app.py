@@ -116,8 +116,23 @@ if st.button("Predict Loan Status", type="primary"):
     else:
         st.error(f"### ❌ Loan Rejected (Confidence: {probability[0]*100:.2f}%)")
 
-    # Display clean analytics metrics presentation 
-    st.subheader("📊 Prediction Probabilities Breakdowns")
-    metrics_col1, metrics_col2 = st.columns(2)
-    metrics_col1.metric(label="Approval Chance", value=f"{probability[1]*100:.2f}%")
-    metrics_col2.metric(label="Rejection Chance", value=f"{probability[0]*100:.2f}%")
+  # Display clean analytics metrics presentation 
+st.subheader("📊 Prediction Probabilities Breakdowns")
+
+st.html(
+    """
+    <style>
+    div[data-testid="stMetric"] label {
+        color: #1E293B !important; /* Dark gray for the label text */
+    }
+    div[data-testid="stMetric"] div[data-testid="stMetricValue"] {
+        color: #0F172A !important; /* Near black for the numeric value */
+    }
+    </style>
+    """
+)
+
+metrics_col1, metrics_col2 = st.columns(2)
+metrics_col1.metric(label="Approval Chance", value=f"{probability[1]*100:.2f}%")
+metrics_col2.metric(label="Rejection Chance", value=f"{probability[0]*100:.2f}%")
+
